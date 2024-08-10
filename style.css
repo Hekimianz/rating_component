@@ -1,0 +1,109 @@
+:root {
+  --dark-blue: #262e38;
+  --light-grey: #969fad;
+  --orange: #fc7614;
+  --very-dark-blue: #131518;
+  --gradient: radial-gradient(
+    circle,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background: var(--gradient);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2.4rem;
+  padding-bottom: 3.2rem;
+  max-width: 32.7rem;
+  border-radius: 15px;
+}
+
+.star__icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 1.33rem;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.star__icon img {
+  width: 1.4rem;
+}
+
+h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--light-grey);
+  font-size: 1.4rem;
+  line-height: 22px;
+  margin-bottom: 2.4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 3.2rem;
+}
+
+li {
+  cursor: pointer;
+  color: var(--light-grey);
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.17px;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  color: var(--very-dark-blue);
+  height: 4.5rem;
+  color: var(--very-dark-blue);
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1.87px;
+  border-radius: 22.5px;
+  background-color: var(--orange);
+}
