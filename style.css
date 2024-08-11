@@ -21,7 +21,6 @@ html {
   font-size: 62.5%;
 }
 
-html,
 body {
   width: 100vw;
   min-height: 100vh;
@@ -36,15 +35,21 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 2.4rem;
-  padding-bottom: 3.2rem;
+  justify-content: center;
+  padding: 0 2.4rem;
   width: 87.2%;
   max-width: 41.2rem;
   border-radius: 15px;
+  position: relative;
+  height: 36.2rem;
 }
 
 section {
-  transition: 0.5s all;
+  position: relative;
+  opacity: 1;
+  max-height: 1000px;
+  overflow: hidden;
+  transition: opacity 0.5s, max-height 0.5s;
 }
 
 .star__icon {
@@ -73,7 +78,7 @@ h1 {
 p {
   color: var(--light-grey);
   font-size: 1.4rem;
-  line-height: 22px;
+  line-height: 2.2rem;
   margin-bottom: 2.4rem;
 }
 
@@ -107,7 +112,6 @@ button {
   border: none;
   color: var(--very-dark-blue);
   height: 4.5rem;
-  color: var(--very-dark-blue);
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1.87px;
@@ -124,17 +128,17 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .thanks__section img {
-  margin-top: 3.4rem;
   margin-bottom: 2.4rem;
 }
+
 span {
   color: var(--orange);
   background-color: var(--dark-blue);
   line-height: 3.2rem;
-
   border-radius: 22.5px;
   font-size: 1.5rem;
   display: flex;
@@ -156,10 +160,15 @@ span {
 
 .hidden {
   opacity: 0;
-  display: none;
+  max-height: 0;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    height: 41.6rem;
+  }
+
   .star__icon {
     width: 4.8rem;
     height: 4.8rem;
@@ -178,7 +187,7 @@ span {
 
   p {
     font-size: 1.5rem;
-    line-height: 24px;
+    line-height: 2.4rem;
   }
 
   ul {
@@ -203,9 +212,9 @@ span {
   }
 
   .thanks__section img {
-    margin-top: 4.5rem;
     margin-bottom: 3.2rem;
   }
+
   span {
     margin-bottom: 3.2rem;
   }
